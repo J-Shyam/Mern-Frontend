@@ -1,0 +1,89 @@
+import { createBrowserRouter } from 'react-router-dom'
+import App from '../App'
+import Home from '../pages/Home'
+import Login from '../pages/Login'
+import ForgotPassword from '../pages/ForgotPassword'
+import SignUp from '../pages/SignUp'
+import AdminPanel from '../pages/AdminPanel'
+import AllUsers from '../pages/AllUsers'
+import AllProducts from '../pages/AllProducts'
+import CategoryProduct from '../pages/CategoryProduct'
+import ProductsDetails from '../pages/ProductsDetails'
+import Cart from '../pages/Cart'
+import SearchProduct from '../pages/SearchProduct'
+import Cancel from '../pages/Cancel';
+import Success from '../pages/Success';
+import OrderPage from '../pages/OrderPage'
+
+
+
+
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <App />,
+        children: [
+            {
+                path: "",
+                element: <Home />
+            },
+            {
+                path: "login",
+                element: <Login />
+            },
+            {
+                path: "forgot-password",
+                element: <ForgotPassword />
+            },
+            {
+                path: "sign-up",
+                element: <SignUp />
+            },
+            {
+                path: "product-category",
+                element: <CategoryProduct />
+            },
+            {
+                path: "product/:id",
+                element: <ProductsDetails />
+            },
+            {
+                path: "cart",
+                element: <Cart />
+            },
+            {
+                path: "success",
+                element: <Success />
+            },
+            {
+                path: "cancel",
+                element: <Cancel />
+            },
+            {
+                path: "Search",
+                element: <SearchProduct />
+            },
+            {
+                path: "order",
+                element: <OrderPage />
+            },
+            {
+                path: "admin-Panel",
+                element: <AdminPanel />,
+                children: [
+                    {
+                        path: "all-Users",
+                        element: <AllUsers />
+                    },
+                    {
+                        path: "all-Products",
+                        element: <AllProducts />
+                    }
+                ]
+            },
+        ]
+    }
+])
+
+export default router

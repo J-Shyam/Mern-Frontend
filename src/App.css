@@ -1,0 +1,42 @@
+.customShadow{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/* User Table */
+ 
+.userTable{
+    @apply bg-white
+}
+.userTable th{
+    @apply border text-base font-medium
+}
+
+.userTable td{
+    @apply border text-base text-center
+}
+
+/***home menu scrollbar***/
+
+.scrollbar-none::-webkit-scrollbar{
+display: none;
+}
+
+/**carosal*/
+.carosal{
+    mask-image: linear-gradient(to bottom, #000000 50%, transparent 100%);
+}
+
+  /**image shadow**/
+  /* .filter-shadow{
+    width: 100px;
+    height: auto;
+    filter: drop-shadow(1px 1px 20px black);
+  } */
+  @media (min-width: 320px) and (max-width: 1440px) {
+    .Horizontal{
+        background: linear-gradient(135deg,rgba(243, 242, 242, 0.2), rgba(241, 241, 241, 0.2));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
+  }
+  
