@@ -32,7 +32,7 @@ const AllOrder = () => {
         )
       }
 
-      <div className='lg:w-1/2 rounded-lg h-[calc(100vh-80px)] overflow-y-scroll max-h-[calc(100vh-80px)] scroll-smooth scrollbar-none mt-4'>
+      <div className='lg:w-1/2 rounded-lg h-[calc(100vh-80px)] overflow-y-scroll max-h-[calc(100vh-80px)] scroll-smooth scrollbar-none mt-2'>
         {
           data.map((item, index) => {
             return (
