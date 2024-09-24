@@ -14,6 +14,7 @@ import SearchProduct from '../pages/SearchProduct'
 import Cancel from '../pages/Cancel';
 import Success from '../pages/Success';
 import OrderPage from '../pages/OrderPage'
+import AllOrder from '../pages/AllOrder'
 
 
 
@@ -79,6 +80,10 @@ const router = createBrowserRouter([
                     {
                         path: "all-Products",
                         element: <AllProducts />
+                    },
+                    {
+                        path : "all-orders",
+                        element : <AllOrder/>
                     }
                 ]
             },
