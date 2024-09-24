@@ -30,7 +30,10 @@ const OrderPage = () => {
     <div className='flex bg-gray-100'>
       {
         !data[0] && (
-          <img src={noorders} className='mix-blend-multiply'/>
+          <div>
+            <h1 className='font-bold flex items-center justify-center'>No Orders Yet..</h1>
+          <img src={noorders} className=' wfit h-fit mix-blend-multiply' />
+          </div>
         )
       }
 
@@ -40,16 +43,16 @@ const OrderPage = () => {
             return (
               <div key={item.userId + index} className='border bg-white mb-6 drop-shadow-md'>
                 <div className='w-full flex justify-center'>
-                <p className='font-semibold text-lg py-2 px-4 w-fit top-0 rounded-b-full  bg-green-100 mb-3 drop-shadow-md'>{moment(item.createdAt).format('LL')}</p>
+                  <p className='font-semibold text-lg py-2 px-4 w-fit top-0 rounded-b-full  bg-green-100 mb-3 drop-shadow-md'>{moment(item.createdAt).format('LL')}</p>
                 </div>
                 <div className='grid gap-1'>
                   {
                     item.productDetails.map((product, index) => {
                       return (
                         <div key={product.productId + index} className='flex gap-3 bg-gray-50 mb-3 shadow-inner drop-shadow-md rounded-sm'>
-                         
+
                           <img src={product.image[0]} className='w-28 h-28  object-scale-down p-2 ml-4 mix-blend-multiply' />
-                         
+
                           <div>
                             <div className='font-medium text-lg text-ellipsis line-clamp-1'>{product.name}</div>
                             <div className='flex items-center gap-5 mt-1'>
@@ -85,7 +88,7 @@ const OrderPage = () => {
 
 
                 <div className='flex items-center justify-center font-semibold gap-1 rounded-' >
-                 <div className='gap-2 bg-slate-100 flex items-center flex-row p-2 px-4 shadow-inner shadow-black rounded-t-full font-bold'> Total Amount : <h2 className=' text-blue-900'>{item.totalAmount}</h2></div>
+                  <div className='gap-2 bg-slate-100 flex items-center flex-row p-2 px-4 shadow-inner shadow-black rounded-t-full font-bold'> Total Amount : <h2 className=' text-blue-900'>{item.totalAmount}</h2></div>
                 </div>
 
 
@@ -95,8 +98,8 @@ const OrderPage = () => {
         }
       </div>
       <div className='z-10 lg:w-1/2 bg-gray-100 relative flex justify-center items-center top-0'>
-      <img src ={cart} className='absolute h-20 -mt-64 animate-bounce'/>
-      <img src={orderonline} className='absolute flex mt-20'/>
+        <img src={cart} className='absolute h-20 -mt-64 animate-bounce' />
+        <img src={orderonline} className='absolute flex mt-20' />
       </div>
     </div>
   )
