@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import moment from 'moment'
 import SummaryApi from '../common'
 import displayInrCurrency from '../helpers/displayInrCurrency'
-import gif from '../assets/3d.gif'
+import noorders from '../assets/noorders.gif'
 import orderonline from '../assets/orderonline.gif'
 import cart from '../assets/cart.gif'
 
@@ -30,7 +30,7 @@ const OrderPage = () => {
     <div className='flex bg-gray-100'>
       {
         !data[0] && (
-          <p>No Order available</p>
+          <img src={noorders} className='mix-blend-multiply'/>
         )
       }
 
