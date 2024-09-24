@@ -82,7 +82,7 @@ const router = createBrowserRouter([
                         element: <AllProducts />
                     },
                     {
-                        path : "all-orders",
+                        path : "all-order",
                         element : <AllOrder/>
                     }
                 ]
