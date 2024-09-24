@@ -3,8 +3,7 @@ import moment from 'moment'
 import SummaryApi from '../common'
 import displayInrCurrency from '../helpers/displayInrCurrency'
 import gif from '../assets/3d.gif'
-import orderonline from '../assets/orderonline.gif'
-import cart from '../assets/cart.gif'
+
 
 const AllOrder = () => {
     const [data, setData] = useState([])
@@ -94,8 +93,8 @@ const AllOrder = () => {
         }
       </div>
       <div className='z-10 lg:w-1/2 bg-gray-100 relative flex justify-center items-center top-0'>
-      <img src ={cart} className='absolute h-20 -mt-64 animate-bounce'/>
-      <img src={orderonline} className='absolute flex mt-20'/>
+      
+      <img src={gif} className='absolute flex mt-20'/>
       </div>
     </div>
   )
