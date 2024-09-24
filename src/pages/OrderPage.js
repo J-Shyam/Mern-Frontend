@@ -30,8 +30,8 @@ const OrderPage = () => {
     <div className='flex bg-gray-100'>
       {
         !data[0] && (
-          <div>
-            <h1 className='font-bold flex items-center justify-center'>No Orders Yet..</h1>
+          <div className='flex items-center justify-center'>
+            <h1 className='font-bold text-2xl'>No Orders Yet..</h1>
           <img src={noorders} className=' wfit h-fit mix-blend-multiply' />
           </div>
         )
