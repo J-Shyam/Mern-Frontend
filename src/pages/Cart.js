@@ -14,7 +14,7 @@ const Cart = () => {
     const loadingCart = new Array(context.cartProductCount).fill(null)
 
     const fetchData = async () => {
-        setLoading(true)
+        setLoading(false)
         const response = await fetch(SummaryApi.addToCartProductView.url, {
             method: SummaryApi.addToCartProductView.method,
             credentials: 'include',
