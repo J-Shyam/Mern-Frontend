@@ -4,6 +4,7 @@ import displayInrCurrency from '../helpers/displayInrCurrency'
 import Context from '../context'
 import addToCart from '../helpers/addToCard'
 import { Link } from 'react-router-dom'
+import search from '../assets/searching.gif'
 
 const MobileCard = ({loading,data = []}) => {
     const loadingList = new Array(13).fill(null)
@@ -14,7 +15,7 @@ const MobileCard = ({loading,data = []}) => {
         fetchUserAddToCart()
     }
   return (
-    <div className='grid grid-cols-[repeat(auto-fit,minmax(175px,175px))] overflow-x-scroll scrollbar-none transition-all' >
+    <div className='grid grid-cols-[repeat(auto-fit,minmax(200px,200px))] overflow-x-scroll scrollbar-none transition-all' >
 
 
                 {
@@ -23,6 +24,7 @@ const MobileCard = ({loading,data = []}) => {
 
                             return (
                                 <div className='w-full min-w-[120px] max-w-[290px] bg-white rounded-sm shadow-xl'>
+
                                     <div className='bg-slate-200 h-40 p-2 min-w-[280px] flex items-center justify-center animate-pulse'>
                                     </div>
                                     <div className='p-4 grid gap-3'>
@@ -33,13 +35,14 @@ const MobileCard = ({loading,data = []}) => {
                                         <button className='bg-orange-200 rounded-full h-4 px-2 py-0.5 animate-pulse'></button>
                                     </div>
                                 </div>
+
                             )
                         })
                     ) : (
                         data.map((product,index) => {
 
                             return (
-                                <Link to={"/product/" + product?._id} className='w-full mb-5  min-w-[100px] max-w-[190px] bg-slate-200' onClick={scrollTop}>
+                                <Link to={"/product/" + product?._id} className='mb-5  min-w-[100px] max-w-[190px] bg-slate-200' onClick={scrollTop}>
                                     <div className='bg-slate-200 h-24 p-2 min-w-[90px] flex items-center justify-center shadow-lg rounded-2xl'>
                                         <img src={product?.productImage[0]} alt={""} className='object-scale-down h-full hover:scale-110 transition-all mix-blend-multiply' />
                                     </div>

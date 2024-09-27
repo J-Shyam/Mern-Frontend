@@ -28,14 +28,14 @@ const SearchProduct = () => {
       {
         loading && (
 
-          <p className=' text-lg text-center'>Loading ...</p>
+          <p className='font-medium text-slate-400 text-lg my-2 drop-shadow-lgtext-center'>Loading ...</p>
 
         )
       }
-      <p> Search Results : {data.length}</p>
+      <p className='font-medium text-slate-400 text-lg my-2 drop-shadow-lg'> Search Results : {data.length}</p>
       {
         data.length === 0 && !loading && (
-          <p>No data found...</p>
+          <p className='font-medium text-slate-400 text-lg my-2 drop-shadow-lgtext-center'>No data found...</p>
         )
       }
 

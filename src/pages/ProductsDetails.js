@@ -179,7 +179,7 @@ fetchUserAddToCart()
             </div>
           ) : (
             <div className='flex flex-col gap-2'>
-              <p className='bg-green-200 font-semibold text-green-800 px-2 w-fit rounded-full'>{data?.brandName}</p>
+              <p className='bg-green-200 font-semibold text-green-800 px-2 w-fit rounded-full mt-4'>{data?.brandName}</p>
               <h2 className='text-lg lg:text-2xl font-medium'>{data?.productName}</h2>
               <p className='bg-slate-400 text-white w-fit rounded-full p-2 py-1 capitalize'>{data?.category}</p>
 

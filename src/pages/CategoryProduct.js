@@ -4,6 +4,7 @@ import productCategory from '../helpers/productCategory'
 import VerticalCard from '../components/VerticalCard'
 import SummaryApi from '../common'
 import MobileCard from './mobileCategoryProduct'
+import search from '../assets/searching.gif'
 
 
 const CategoryProduct = () => {

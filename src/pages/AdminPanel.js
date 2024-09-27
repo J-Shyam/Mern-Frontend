@@ -29,10 +29,10 @@ const AdminPanel = () => {
 
                 {/***navigation */}
                 <div>
-                    <nav className='grid p-4'>
-                        <Link to={"all-Users"} className='px-2 py-1 hover:bg-slate-100'>All Users</Link>
-                        <Link to={"all-Products"} className='px-2 py-1 hover:bg-slate-100'>All Products</Link>
-                        <Link to={"all-orders"} className='px-2 py-1 hover:bg-slate-100'>All Orders</Link>
+                    <nav className='grid py-4 gap-2'>
+                        <Link to={"all-Users"} className='px-6 py-1 hover:bg-slate-100 bg-white w-3/4 p-5 font-semibold rounded-e-full drop-shadow-lg'>All Users</Link>
+                        <Link to={"all-Products"} className='px-6 py-1 hover:bg-slate-100 bg-white w-3/4 p-5 font-semibold rounded-e-full drop-shadow-lg'>All Products</Link>
+                        <Link to={"all-orders"} className='px-6 py-1 hover:bg-slate-100 bg-white w-3/4 p-5 font-semibold rounded-e-full drop-shadow-lg'>All Orders</Link>
                     </nav>
                 </div>
             </aside>

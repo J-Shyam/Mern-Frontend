@@ -14,7 +14,7 @@ const VerticalCard = ({loading,data = []}) => {
         fetchUserAddToCart()
     }
   return (
-    <div className='grid grid-cols-[repeat(auto-fit,minmax(190px,190px))] md:grid-cols-[repeat(auto-fit,minmax(210px,210px))] lg:grid-cols-[repeat(auto-fit,minmax(220px,220px))] md:gap-6 overflow-x-scroll scrollbar-none transition-all' >
+    <div className='grid grid-cols-[repeat(auto-fit,minmax(198px,198px))] md:grid-cols-[repeat(auto-fit,minmax(210px,210px))] lg:grid-cols-[repeat(auto-fit,minmax(220px,220px))] md:gap-6 overflow-x-scroll scrollbar-none transition-all' >
 
 
                 {

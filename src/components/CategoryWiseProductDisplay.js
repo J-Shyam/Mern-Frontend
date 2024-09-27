@@ -36,11 +36,11 @@ const CategoryWiseProductDisplay = ({ category, heading }) => {
 
 
     return (
-        <div className='container mx-auto px-4 my-6 relative'>
+        <div className='container px-1 my-6 relative'>
 
             <h2 className='text-2xl font-semibold py-4 bg-gray-300 rounded-full px-4 w-fit bg-opacity-45 mb-4'>{heading}</h2>
 
-            <div className='grid grid-cols-[repeat(auto-fit,minmax(160px,160px))] md:grid-cols-[repeat(auto-fit,minmax(210px,210px))] lg:grid-cols-[repeat(auto-fit,minmax(220px,220px))] md:gap-6 overflow-x-scroll scrollbar-none transition-all' >
+            <div className='grid grid-cols-[repeat(auto-fit,minmax(190px,190px))] md:grid-cols-[repeat(auto-fit,minmax(210px,210px))] lg:grid-cols-[repeat(auto-fit,minmax(220px,220px))] md:gap-6 overflow-x-scroll scrollbar-none transition-all gap-1' >
 
 
                 {
@@ -65,7 +65,7 @@ const CategoryWiseProductDisplay = ({ category, heading }) => {
                         data.map((product,index) => {
 
                             return (
-                                <Link to={"/product/" + product?._id} className='w-full mb-5 ml-1 min-w-[100px]  md:min-w-[230px] max-w-[190px] md:max-w-[230px] bg-slate-200  md:shadow-white md:shadow-lg md:rounded-xl lg:drop-shadow-lg lg:shadow-lg rounded-sm lg:rounded-xl' onClick={scrollTop}>
+                                <Link to={"/product/" + product?._id} className='mb-5 ml-1 min-w-[120px]  md:min-w-[230px] max-w-[190px] md:max-w-[230px] bg-slate-200 md:shadow-white md:shadow-lg md:rounded-xl lg:drop-shadow-lg lg:shadow-lg rounded-sm lg:rounded-xl' onClick={scrollTop}>
                                     <div className='bg-slate-200 h-24 p-2 md:h-36 min-w-[90px] md:min-w-[85px] flex items-center justify-center shadow-lg rounded-2xl'>
                                         <img src={product.productImage[0]} alt={""} className='object-scale-down h-full hover:scale-110 transition-all mix-blend-multiply' />
                                     </div>
